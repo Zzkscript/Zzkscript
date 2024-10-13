@@ -68,13 +68,13 @@ game:GetService("RunService").RenderStepped:Connect(function()
         local camera = workspace.CurrentCamera
         local moveDirection = Vector3.new(0, 0, 0)
         
-        if UIS:IsKeyDown(Enum.KeyCode.Z) then
+        if UIS:IsKeyDown(Enum.KeyCode.W) then
             moveDirection = moveDirection + (camera.CFrame.LookVector)
         end
         if UIS:IsKeyDown(Enum.KeyCode.S) then
             moveDirection = moveDirection - (camera.CFrame.LookVector)
         end
-        if UIS:IsKeyDown(Enum.KeyCode.Q) then
+        if UIS:IsKeyDown(Enum.KeyCode.A) then
             moveDirection = moveDirection - (camera.CFrame.RightVector)
         end
         if UIS:IsKeyDown(Enum.KeyCode.D) then
